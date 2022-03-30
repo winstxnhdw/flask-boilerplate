@@ -8,7 +8,7 @@ More about Flask [here](https://flask.palletsprojects.com/).
 
 ## Installation
 
-Only support Arch and Debian-based installations.
+Only Arch and Debian-based installations are supported.
 
 ```bash
 sh requirements.sh
