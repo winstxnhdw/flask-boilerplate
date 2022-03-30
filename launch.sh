@@ -24,4 +24,4 @@ docker rm $app_name
 docker build -t $app_name .
 
 # Run Docker image
-docker run --name $app_name $appname
+docker run --name $app_name $app_name
