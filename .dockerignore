@@ -1,0 +1,8 @@
+.vscode/
+
+.gitignore
+Dockerfile
+
+*.sh
+*.md
+*.pyc
