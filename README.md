@@ -3,5 +3,5 @@
 ## Usage
 
 ```bash
-sh launch.sh <app-name>
+sh launch.sh -n <app-name>
 ```
