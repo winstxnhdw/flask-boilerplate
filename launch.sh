@@ -1,6 +1,17 @@
 #!/bin/bash
 
-app_name=emanon
+while getopts n: flag
+do
+    case $flag in
+        n) app_name=$OPTARG
+    esac
+done
+
+if [ $OPTIND -eq 1 ]
+then
+    app_name=emanon
+    echo "No flags were set, defaulting to app_name: $app_name"
+fi
 
 # Clear the port before beginning
 sh ./clearport.sh

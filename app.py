@@ -1,4 +1,3 @@
-
 from os import environ as env
 from flask import request, render_template
 from server import init_server
