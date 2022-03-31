@@ -1,6 +1,7 @@
 .vscode/
 
 .gitignore
+.prettierrc
 Dockerfile
 
 *.sh
