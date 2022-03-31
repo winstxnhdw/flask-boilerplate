@@ -1,15 +1,19 @@
 from flask import render_template, request
 from flask_sqlalchemy import SQLAlchemy
 from server import init_server
-from models import Model
 from config import Config
 
 app = init_server()
 app.config.from_object(Config)
 db = SQLAlchemy(app)
 
+class Model(db.Model):
+    
+    __tablename__ = 'Model'
+    id = db.Column(db.Integer, primary_key=True)
+
 @app.route('/')
-def index():
+def index() -> str:
     
     return render_template('index.html')
 
